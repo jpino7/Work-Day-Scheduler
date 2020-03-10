@@ -56,7 +56,6 @@ for (var i = 8; i < 18; i++) {
 
 // Click Event for saveButton
 $(document).on("click", ".saveBtn", function(){
-
     // Variable for input data in textarea
     var input = $("#input" + $(this).attr("name")).val();
     // stores what input data gets received
@@ -64,15 +63,16 @@ $(document).on("click", ".saveBtn", function(){
 });
 
 
-// Anything that gets entered in these time blocks will get stored
-$("input8").val(localStorage.getItem("8"));
-$("input9").val(localStorage.getItem("9"));
-$("input10").val(localStorage.getItem("10"));
-$("input11").val(localStorage.getItem("11"));
-$("input12").val(localStorage.getItem("12"));
-$("input13").val(localStorage.getItem("13"));
-$("input14").val(localStorage.getItem("14"));
-$("input15").val(localStorage.getItem("15"));
-$("input16").val(localStorage.getItem("16"));
-$("input17").val(localStorage.getItem("17"));
-$("input18").val(localStorage.getItem("18"));
+// Any data that gets input in the text areas will get stored even thru refresh
+// unless otherwise deleted and saved
+$("#input8").val(localStorage.getItem("8"));
+$("#input9").val(localStorage.getItem("9"));
+$("#input10").val(localStorage.getItem("10"));
+$("#input11").val(localStorage.getItem("11"));
+$("#input12").val(localStorage.getItem("12"));
+$("#input13").val(localStorage.getItem("13"));
+$("#input14").val(localStorage.getItem("14"));
+$("#input15").val(localStorage.getItem("15"));
+$("#input16").val(localStorage.getItem("16"));
+$("#input17").val(localStorage.getItem("17"));
+$("#input18").val(localStorage.getItem("18"));
