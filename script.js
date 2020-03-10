@@ -6,12 +6,16 @@ console.log(today);
 $("#currentDay").text(today);
 
 // for loop to create div elements on html page for timeblocks
-for (var i = 8; i < 17; i++) {
+for (var i = 8; i < 18; i++) {
     var pElement = $("<p></p>").text(i + ":00am ");
 
     // if statement will switch from military to standard time and adds the class="hour" to the <p>.
+        // Added else if statement to be able to get 12:00pm to appear because 12:00am was ONLY appearing
     if (i > 12) {
-        pElement.text(i - 12 + ":00pm  ");
+        pElement.text(i - 12 + ":00pm ");
+    }
+    else if (i > 11) {
+        pElement.text(i - 0 + ":00pm ");
     }
     pElement.addClass("hour col-md-2")
 
@@ -71,3 +75,4 @@ $("input14").val(localStorage.getItem("14"));
 $("input15").val(localStorage.getItem("15"));
 $("input16").val(localStorage.getItem("16"));
 $("input17").val(localStorage.getItem("17"));
+$("input18").val(localStorage.getItem("18"));
