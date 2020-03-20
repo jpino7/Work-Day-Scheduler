@@ -7,7 +7,7 @@ This project was to create a calendar application to allow the user to save even
  * This app runs in the browser and features dynamically updated HTML and CSS powered by jQuery.
 
 ### Design
- * index.html - designed to function it jQuery.
+ * index.html - designed to function with jQuery.
  * style.css - designed to add colors to the time frames given if it is past, present, future in the application.
  * script.js - coded with jQuery to allow the display of time blocks into the HTML.
 
